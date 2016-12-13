@@ -1,0 +1,54 @@
+title = "Vo Vinh"
+languageCode = "en-us"
+baseurl = "http://gswcapital.com/"
+theme = "casper"
+# Define how many pages appear per site
+paginate = 10
+
+[params]
+    site_author = "Võ Vinh"
+    site_description = "think, imagine, observe then write..."
+    location = "Earth"
+    # All paths are relative to the baseurl. Put your files
+    # somewhere in the static folder.
+    avatar = "img/profile-image.png"
+    header_background = "img/desk.jpg"
+    header_title = "Customizable header title"
+    copyright = "Powered by [Hugo](http://gohugo.io)."
+
+    # Enable gogle analytics by entering your tracking code
+    google_analytics = ""
+
+[social]
+    # Add your social network accounts to the profile section on the left
+    # by entering your username. The links to your account will be
+    # create automatically.
+    twitter   = "glorevenhite"
+    facebook  = "truongvinh.vo"
+    linkedin  = "votruongvinh"
+    github    = "glorevenhite"
+    gplus     = "vinh.votruong"
+
+[[menu.main]]
+  name = "Home"
+  weight = -130
+  identifier = "home"
+  url = "/"
+
+[[menu.main]]
+  name = "Blogs"
+  weight = -120
+  identifier = "blog"
+  url = "/blog"
+
+[[menu.main]]
+  name = "Articles"
+  weight = -110
+  identifier = "article"
+  url = "/article"
+
+[[menu.main]]
+  name = "About me"
+  weight = -100
+  identifier = "about"
+  url = "/about"
