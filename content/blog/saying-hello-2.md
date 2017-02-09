@@ -17,3 +17,5 @@ share = false
 Đã khá lâu rồi không viết lách thứ gì nghiêm túc, chợt thấy cuộc sống cứ bừa bộn, cuống cuồng... Nhiều điều muốn làm, nhiều điều dang dở...
 
 Hay là mình lại viết, viết một cái gì đó, ít ra là viết, thậm chí chỉ là viết ra những con chữ?!
+
+Uuuuuu
