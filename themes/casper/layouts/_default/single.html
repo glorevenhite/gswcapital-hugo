@@ -25,12 +25,7 @@
 </header>
 
 
-
 <main class="content" role="main">
-
-
-
-
   <article class="post {{ .Section }}">
 
     <header class="post-header">
@@ -43,9 +38,6 @@
             {{ .Date.Format "Jan 2, 2006" }}
           </time>
         {{end}}
-         {{ range .Params.tags }}
-          <span class="post-tag small"><a href="{{ $baseurl }}tags/{{ . | urlize }}/">#{{ . }}</a></span>
-         {{ end }}
         </section>
     </header>
 
@@ -53,10 +45,13 @@
       {{ .Content }}
     </section>
 
+    <section>
+      {{ range .Params.tags }}
+          <span class="post-tag small"><a href="{{ $baseurl }}tags/{{ . | urlize }}/">#{{ . }}</a></span>
+      {{ end }}
+    </section>
 
   <footer class="post-footer">
-
-
     {{if .Site.Params.logo}}
     <figure class="author-image">
         <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{ $baseurl }}{{.Site.Params.logo}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>

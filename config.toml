@@ -1,18 +1,18 @@
 title = "Vo Vinh"
 languageCode = "en-us"
-baseurl = "http://gswcapital.com/"
+baseurl = "https://gswcapital.github.io/"
 theme = "casper"
 # Define how many pages appear per site
 paginate = 10
 
 [params]
     site_author = "Võ Vinh"
-    site_description = "think, imagine, observe then write..."
+    site_description = "Enthusiastic & Ambitious"
     location = "Earth"
     # All paths are relative to the baseurl. Put your files
     # somewhere in the static folder.
-    avatar = "img/profile-image.png"
-    header_background = "img/desk.jpg"
+    avatar = "images/profile-image.png"
+    header_background = "images/desk.jpg"
     header_title = "Customizable header title"
     copyright = "Powered by [Hugo](http://gohugo.io)."
 

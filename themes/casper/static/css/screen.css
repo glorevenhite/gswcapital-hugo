@@ -191,7 +191,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: "Open Sans", serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -1186,6 +1186,15 @@ body:not(.post-template) .post-title {
     color: #50585D;
 }
 
+section .social {
+    float:left;
+    width: 60%;
+}
+
+section .share {
+    float:left;
+}
+
 
 /* ==========================================================================
    6. Author profile
@@ -1292,6 +1301,14 @@ body:not(.post-template) .post-title {
     color: #50585D;
     letter-spacing: 0;
     text-indent: 0;
+}
+
+.author-avartar-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
 }
 
 .author-meta {
