@@ -7,7 +7,7 @@ comments = false
 author = ""
 slug = "20161106-saying-hello-world"
 tags = [
-  "hello",
+  "hello", "blog", "misc"
 ]
 image = ""
 share = false
