@@ -1,6 +1,6 @@
 +++
 date = "2016-11-06T17:09:49+07:00"
-title = "Hello World"
+title = "Hello World 2"
 draft = false
 menu = ""
 comments = false
