@@ -969,8 +969,13 @@ body:not(.post-template) .post-title {
     line-height: 1.7em;
 }
 
+.summary {
+    font-size: 0.8em;
+}
+
 .read-more {
     text-decoration: none;
+    font-size: 0.8em;
 }
 
 .post-meta {
@@ -996,6 +1001,15 @@ body:not(.post-template) .post-title {
 }
 
 .post-meta a:hover {
+    text-decoration: underline;
+}
+
+.post-tag, .post-tag a {
+    color: #9EABB3;
+    text-decoration: none;
+}
+
+.post-tag a:hover {
     text-decoration: underline;
 }
 
