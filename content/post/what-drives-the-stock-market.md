@@ -4,7 +4,7 @@ title = "What Drives the Stock Market"
 draft = false
 menu = ""
 comments = false
-author = ""
+author = "vovinh"
 slug = "what-drives-the-stock-market"
 tags = [
   "macro",

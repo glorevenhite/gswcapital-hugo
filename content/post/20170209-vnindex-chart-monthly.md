@@ -1,10 +1,10 @@
 +++
+author = "vovinh"
 date = "2017-02-09T17:09:49+07:00"
 title = "VNINDEX: Khả năng năng đi ngang còn kéo dài"
 draft = false
 menu = ""
 comments = false
-author = ""
 slug = "20170209-sideways-nhieu-kha-nang-con-keo-dai"
 categories = [
 	"commentary"

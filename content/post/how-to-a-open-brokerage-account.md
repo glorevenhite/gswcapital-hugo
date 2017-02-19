@@ -1,5 +1,5 @@
 +++
-author = "Võ Vinh"
+author = "vovinh"
 draft = false
 tags = [
   "guide",
