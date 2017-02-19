@@ -34,7 +34,7 @@ paginatePath = "page"
     facebook  = "truongvinh.vo"
     linkedin  = "votruongvinh"
     github    = "glorevenhite"
-    gplus     = "vinh.votruong"
+    googleplus = "vinh.votruong"
 
 [taxonomies]
   tag = "tags"
