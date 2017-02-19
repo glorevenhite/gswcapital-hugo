@@ -10,14 +10,14 @@ categories = [
 	"commentary"
 ]
 tags = [
-  "vnindex", "technical analysis", "daily"
+  "vnindex", "commentary", "daily"
 ]
 image = ""
 share = false
 
 +++
 
-The market saw some nice gains today to go along with a few losses for selected bluechips. Market breadth was quire narrow and we saw 28 stocks hit the ceiling while 20 stocks fell to the floor. Foreigners were somewhat less active today with much more selling than buying.
+The market saw some nice gains today to go along with a few losses for selected bluechips. Market breadth was quite narrow and we saw 28 stocks hit the ceiling while 20 stocks fell to the floor. Foreigners were somewhat less active today with much more selling than buying.
 
 <!--more-->
 
