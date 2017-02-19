@@ -1,11 +1,11 @@
 +++
-date = "2017-02-14T17:09:49+07:00"
+date = "2016-12-02T17:09:49+07:00"
 title = "Important Legal Dococuments"
 draft = false
 menu = ""
 comments = false
 author = ""
-slug = "20170214-important-legal-documents"
+slug = "20161202-important-legal-documents"
 tags = [
   "law",
 ]

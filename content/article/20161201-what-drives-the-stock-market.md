@@ -1,11 +1,11 @@
 +++
-date = "2016-12-01T15:09:49+07:00"
+date = "2016-12-03T15:09:49+07:00"
 title = "What Drives the Stock Market"
 draft = false
 menu = ""
 comments = false
 author = ""
-slug = "20161202-what-drives-the-stock-market"
+slug = "20161203-what-drives-the-stock-market"
 tags = [
   "macro",
 ]

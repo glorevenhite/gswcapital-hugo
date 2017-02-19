@@ -1,11 +1,11 @@
 +++
-date = "2016-11-06T17:09:49+07:00"
+date = "2016-12-01T00:00:49+07:00"
 title = "Hello World"
 draft = false
 menu = ""
 comments = false
 author = ""
-slug = "20161106-saying-hello-world"
+slug = "20161202-saying-hello-world"
 tags = [
   "hello", "blog", "misc"
 ]

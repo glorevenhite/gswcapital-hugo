@@ -1,5 +1,5 @@
 +++
-date = "2016-12-01T15:09:49+07:00"
+date = "2016-12-04T15:09:49+07:00"
 title = "Vietnam Stock Trading Rules"
 draft = false
 menu = ""

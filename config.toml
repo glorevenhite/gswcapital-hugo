@@ -49,6 +49,12 @@ paginate = 10
   url = "/investment"
 
 [[menu.main]]
+  name = "Report"
+  weight = -110
+  identifier = "report"
+  url = "/report"
+
+[[menu.main]]
   name = "Articles"
   weight = -110
   identifier = "article"
