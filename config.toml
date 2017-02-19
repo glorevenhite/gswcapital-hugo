@@ -24,7 +24,7 @@ paginatePath = "page"
 
 
     # Enable gogle analytics by entering your tracking code
-    google_analytics = ""
+    google_analytics = "UA-16013517-4"
 
 [social]
     # Add your social network accounts to the profile section on the left
