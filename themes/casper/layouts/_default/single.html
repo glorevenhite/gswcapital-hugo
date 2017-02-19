@@ -33,23 +33,23 @@
         <small>{{.Description}}</small>
         
         <section class="post-meta">
-          <img class="author-thumb" src="{{ $.Site.BaseURL }}images/glorevenhite-thumb.jpeg"/> {{.Param "site_author"}} posted
-        {{ if eq .Section "report"}}
-          <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-            on {{ .Date.Format "Jan 2, 2006" }}
-          </time>
+        {{ $author := .Site.Params.author }}
+
+        
+        {{if .Params.tags }} Tagged on
+            {{ range $index, $tag := .Params.tags }}
+                <a class="post-tag" href="{{$baseurl}}tags/{{ $tag | urlize }}/">{{ $tag }}</a>,
+            {{ end }}
         {{end}}
+        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            {{ .Date.Format "2 Jan 2006" }}
+        </time>
+        
         </section>
     </header>
 
     <section class="post-content">
       {{ .Content }}
-    </section>
-
-    <section class="post-tag"> 
-      in {{ range .Params.tags }}
-          <a href="{{ $baseurl }}tags/{{ . | urlize }}/">{{ . | upper }}</a>
-      {{ end }}
     </section>
 
   <footer class="post-footer">

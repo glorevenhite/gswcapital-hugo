@@ -7,7 +7,7 @@ tags = [
 ]
 categories = ["guidance"]
 
-date = "2017-02-19T10:48:29+07:00"
+date = "2016-12-19T10:48:29+07:00"
 image = ""
 comments = true
 share = true
