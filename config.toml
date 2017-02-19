@@ -3,19 +3,23 @@ languageCode = "en-us"
 baseUrl = "https://gswcapital.github.io/"
 theme = "casper"
 
+
 # Define how many pages appear per site
-paginate = 10
+paginate = 5
+paginatePath = "page"
 
 [params]
     site_author = "Võ Vinh"
     site_description = "Enthusiastic & Ambitious"
     location = "Earth"
+
     # All paths are relative to the baseurl. Put your files
     # somewhere in the static folder.
     avatar = "images/glorevenhite-thumb.jpeg"
     header_background = "images/desk.jpg"
     header_title = "Customizable header title"
     copyright = "Powered by [Hugo](http://gohugo.io)."
+
 
     # Enable gogle analytics by entering your tracking code
     google_analytics = ""
@@ -30,6 +34,10 @@ paginate = 10
     github    = "glorevenhite"
     gplus     = "vinh.votruong"
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
 [[menu.main]]
   name = "Home"
   weight = -130
@@ -37,31 +45,31 @@ paginate = 10
   url = "/"
 
 [[menu.main]]
-  name = "Blogs"
-  weight = -120
-  identifier = "blog"
-  url = "/blog"
-
-[[menu.main]]
   name = "Investment"
   weight = -110
-  identifier = "article"
-  url = "/investment"
+  identifier = "investment"
+  url = "/categories/investment"
 
 [[menu.main]]
-  name = "Report"
-  weight = -110
-  identifier = "report"
-  url = "/report"
+  name = "Commentary"
+  weight = -100
+  identifier = "commentary"
+  url = "/categories/commentary"
 
 [[menu.main]]
-  name = "Articles"
-  weight = -110
-  identifier = "article"
-  url = "/article"
+  name = "Invest in Vietnam"
+  weight = -90
+  identifier = "guidance"
+  url = "/categories/guidance"
+
+[[menu.main]]
+  name = "Blogs"
+  weight = -10
+  identifier = "blog"
+  url = "/categories/blog"
 
 [[menu.main]]
   name = "About me"
-  weight = -100
+  weight = 0
   identifier = "about"
   url = "/about"

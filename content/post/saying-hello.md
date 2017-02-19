@@ -9,6 +9,7 @@ slug = "20161202-saying-hello-world"
 tags = [
   "hello", "blog", "misc"
 ]
+categories = ["blog"]
 image = ""
 share = false
 

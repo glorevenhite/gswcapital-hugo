@@ -5,10 +5,15 @@ draft = false
 menu = ""
 comments = false
 author = ""
-slug = "20161203-what-drives-the-stock-market"
+slug = "what-drives-the-stock-market"
 tags = [
   "macro",
 ]
+
+categories = [
+	"investment"
+]
+
 image = ""
 share = false
 

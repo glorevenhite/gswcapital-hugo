@@ -6,6 +6,9 @@ menu = ""
 comments = false
 author = ""
 slug = "20170209-sideways-nhieu-kha-nang-con-keo-dai"
+categories = [
+	"commentary"
+]
 tags = [
   "vnindex", "technical analysis", "daily"
 ]

@@ -4,10 +4,15 @@ title = "Vietnam Stock Trading Rules"
 draft = false
 menu = ""
 comments = false
-author = ""
-slug = "20161202-vietnam-stock-trading-rules"
+author = "Võ Vinh"
+slug = "vietnam-stock-trading-rules"
+
+categories = [
+	"guidance"
+]
 tags = [
   "law",
+  "guide",
 ]
 image = ""
 share = false

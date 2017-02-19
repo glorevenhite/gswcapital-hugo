@@ -38,22 +38,23 @@
 <main id="content" class="content" role="main">
 
     {{ range .Data.Pages }}
-        {{if eq .Type "index" }}
+        {{if eq .Type "index" }} <!-- Would display nothing since no type of so-called index -->
         <div class="index-content post">
         {{.Content}}
         </div>
         {{end}}
     {{ end }}
-
+    <!--
     {{ range .Data.Pages }}
         {{ .Render "summary"}}
     {{ end }}
-
+    
     {{ if not ($.Scratch.Get "paginatedSections") }}
         {{ if isset .Site.Params "paginatedSections" }}
             {{ $.Scratch.Set "paginatedSections" .Site.Params.paginatedSections }}
+            {{ $.Scratch.Get "paginatedSections"}}
         {{ else }}
-            {{ $.Scratch.Set "paginatedSections" "post" }}
+            {{ $.Scratch.Set "paginatedSections" "post" }} 
         {{ end }}
     {{ end }}
 
@@ -61,9 +62,11 @@
     {{ $list := where $list "Section" "!=" "" }}
     {{ $paginator := .Paginate ( $list ) }}
 
+    
     <div class="extra-pagination inner">
         {{ partial "pagination.html" $paginator }}
     </div>
+    -->
 
     {{ range $index, $page := $paginator.Pages }}
         {{ partial "li.html" . }}

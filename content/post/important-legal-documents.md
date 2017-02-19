@@ -5,9 +5,11 @@ draft = false
 menu = ""
 comments = false
 author = ""
-slug = "20161202-important-legal-documents"
+slug = "important-legal-documents"
+categories = ["guidance"]
 tags = [
   "law",
+  "blog",
 ]
 image = ""
 share = false
