@@ -2,6 +2,7 @@ title = "Vo Vinh"
 languageCode = "en-us"
 baseUrl = "https://gswcapital.github.io/"
 theme = "casper"
+enableRobotsTXT = true
 
 
 # Define how many pages appear per site
@@ -21,7 +22,7 @@ paginatePath = "page"
     header_background = "images/desk.jpg"
     header_title = "Customizable header title"
     copyright = "Powered by [Hugo](http://gohugo.io)."
-
+    cover = ""
 
     # Enable gogle analytics by entering your tracking code
     googleAnalyticsUserID = "UA-16013517-4"
