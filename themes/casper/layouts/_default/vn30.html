@@ -52,9 +52,7 @@
       {{ .Content }}
 
       {{ $baseurl := string $baseurl }}
-      {{ $dataJ := getJSON $baseurl "/json/2017a-vn30.json"}}
-      
-      
+      {{ $dataJ := getJSON $baseurl "/json/2017a-vn30.json"}}      
         <table>
           <thead>
             <tr>
@@ -72,6 +70,8 @@
             <tr>
               <td>{{ .val0 }}</td>
               <td> <div class="tooltip">{{ .val1 }}<span class="tooltiptext">{{ .val2}}</span></div></td>
+              
+
               <td style="text-align:right" >{{ .val3 }}</td>
               <td style="text-align:right">{{ .val6 }}</td>
               <td style="text-align:right">{{ .val7 }}</td>

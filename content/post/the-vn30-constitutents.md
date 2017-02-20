@@ -33,12 +33,13 @@ layout = "vn30"
 
 <!--more-->
 2. Review Procedure
-	- **Market capitalisation**: All stocks are sorted in terms of 6-month-daily-average market capitalisation in descending order. The top-50 stocks qualify for the selection.
-	- Free-float: Those whose free-float is lower than 5% are eliminated from the selection.
-	- Liquidity: The remaining stocks are sorted in term of 6-month average daily traded value in descending.
-		+ The stocks in Top 20 are selected into index universe
-		+ The stocks ranked outside the top 40 are eliminated from the index universe
-		+ The stocks 21th - 40th: The Top 30 are selected into the index universe with high prefer to the existing components.
-		+ The rest of 10 would be considered as the reserved stocks.
+	
+- **Market capitalisation**: All stocks are sorted in terms of 6-month-daily-average market capitalisation in descending order. The top-50 stocks qualify for the selection.
+- **Free-float**: Those whose free-float is lower than 5% are eliminated from the selection.
+- **Liquidity**: The remaining stocks are sorted in term of 6-month average daily traded value in descending.
+	+ The stocks in Top 20 are selected into index universe
+	+ The stocks ranked outside the top 40 are eliminated from the index universe
+	+ The stocks 21th - 40th: The Top 30 are selected into the index universe with high prefer to the existing components.
+	+ The rest of 10 would be considered as the reserved stocks.
 
-For the details of the Index, please click [HERE](https://docs.google.com/spreadsheets/d/1Y2mZrlMjDGyIl79ybPVyza-U9h5RonlgTigoOE4eEM4/edit?usp=sharing)
+For the details of the Index, please click [HERE](https://docs.google.com/spreadsheets/d/1Y2mZrlMjDGyIl79ybPVyza-U9h5RonlgTigoOE4eEM4/edit?usp=sharing). The exchange rate using is **1USD = 23,000VND**

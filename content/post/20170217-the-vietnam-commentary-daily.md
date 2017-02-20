@@ -5,7 +5,7 @@ title = "The Vietnam Daily"
 draft = false
 menu = ""
 comments = false
-slug = "20170217-the-vietnam-dailyi"
+slug = "20170217-the-vietnam-daily"
 categories = [
 	"commentary"
 ]
