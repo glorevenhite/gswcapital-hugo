@@ -5,7 +5,7 @@ title = "The VN30-Index constituents"
 draft = false
 menu = ""
 comments = false
-slug = "the-list-of-companies-listed-on-hose"
+slug = "the-vn30-index-constituents"
 categories = [
 	"commentary"
 ]
@@ -14,6 +14,7 @@ tags = [
 ]
 image = ""
 share = false
+layout = "vn30"
 
 +++
 
@@ -39,4 +40,5 @@ share = false
 		+ The stocks ranked outside the top 40 are eliminated from the index universe
 		+ The stocks 21th - 40th: The Top 30 are selected into the index universe with high prefer to the existing components.
 		+ The rest of 10 would be considered as the reserved stocks.
+
 For the details of the Index, please click [HERE](https://docs.google.com/spreadsheets/d/1Y2mZrlMjDGyIl79ybPVyza-U9h5RonlgTigoOE4eEM4/edit?usp=sharing)
