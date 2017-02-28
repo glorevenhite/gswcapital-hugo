@@ -12,6 +12,7 @@ paginatePath = "page"
 [params]
     site_author = "Võ Vinh"
     site_description = "an Active Vehicle in Capturing Gains."
+    description = "Vietnam, Investment, Securities, ETF, Fund, Capital, HedgeFund, Stocks, Markets, Commodity, Brokerage, Trading, Quant, Algorithm, High Frequency Trading, HFT"
 
     location = "HCMC Vietnam"
 
