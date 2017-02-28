@@ -1,4 +1,4 @@
-title = "Vo Vinh"
+title = "AVinCapital"
 languageCode = "en-us"
 baseUrl = "https://gswcapital.github.io/"
 theme = "casper"
@@ -6,12 +6,13 @@ enableRobotsTXT = true
 
 
 # Define how many pages appear per site
-paginate = 5
+paginate = 7
 paginatePath = "page"
 
 [params]
     site_author = "Võ Vinh"
-    site_description = "Enthusiastic & Ambitious"
+    site_description = "an Active Vehicle in Capturing Gains."
+
     location = "HCMC Vietnam"
 
     author = "vovinh"
