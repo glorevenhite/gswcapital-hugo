@@ -10,7 +10,7 @@ categories = [
 	"commentary"
 ]
 tags = [
-  "vnindex", "technical analysis", "daily"
+  "vnindex", "technical analysis", "monthly", "commentary"
 ]
 image = ""
 share = false

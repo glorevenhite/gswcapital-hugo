@@ -5,9 +5,10 @@ title = "The Vietnam Weekly Forecast 20/2 - 24/2"
 draft = false
 menu = ""
 comments = false
-slug = "20170217-the-vietnam-stock-market-next-week-forecast"
+slug = "20170217-vietnam-stock-market-weekly-forecast"
 categories = [
-	"forecast"
+	"forecast",
+	"commentary"
 ]
 tags = [
   "vnindex", "commentary", "weekly"

@@ -7,10 +7,12 @@ menu = ""
 comments = false
 slug = "the-list-of-companies-listed-on-hose"
 categories = [
-	"commentary"
+	"indices",
+	"guidance"
 ]
 tags = [
   "vnindex", 
+  "indices",
 ]
 image = ""
 share = false

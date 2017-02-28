@@ -1,11 +1,11 @@
 +++
 author = "vovinh"
 date = "2017-02-17T17:09:49+07:00"
-title = "The Vietnam Daily"
+title = "The Vietnam Daily Highlights 17/02/2017"
 draft = false
 menu = ""
 comments = false
-slug = "20170217-the-vietnam-daily"
+slug = "20170217-vietnam-stock-market-daily-highlights"
 categories = [
 	"commentary"
 ]

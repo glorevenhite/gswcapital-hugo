@@ -7,10 +7,13 @@ menu = ""
 comments = false
 slug = "the-vn30-index-constituents"
 categories = [
-	"commentary"
+	"indices",
+	"guidance"
 ]
 tags = [
-  "vnindex", 
+  "vnindex",
+  "indices",
+  "vn30" 
 ]
 image = ""
 share = false
