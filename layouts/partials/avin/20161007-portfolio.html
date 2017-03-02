@@ -1,0 +1,58 @@
+<div id="avin-portfolio" style="float:left; width: 100%">
+{{ $url := delimit (slice .Site.BaseURL "csv/20161007-portfolio.csv") ""}}
+{{ $strURL := string $url }}
+
+{{ $dataCSV := getCSV "," $strURL }}
+
+{{ $.Scratch.Add "i" 0 }}
+<table>
+    {{ range $r, $dataCSV }}
+        {{ if eq ($.Scratch.Get "i") 0 }}
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Ticker</th>
+                    <th>Size</th>
+                    <th>Open</th>
+                    <th>High</th>
+                    <th>Low</th>
+                    <th>Close</th>
+                    <th>EPS</th>
+                    <th>P/E</th>
+                    <th style="text-align: right">Weighting</th>
+                </tr>
+            </thead>
+        {{ else }}
+            <tbody>
+                <tr>
+                  <td>{{ index $r 0 }}</td>
+                  <td> 
+                  	<div class="tooltip">{{ index $r 1 }}
+                  		<span class="tooltiptext">Sector: {{ index $r 2}} | Market Capital: <span class="numbers"> {{ index $r 3}} </span> </span>
+                		</div>
+                	  </td>
+                  <td>{{ index $r 4 }}</td>
+                  <td class="numbers" style="text-align: right">{{ index $r 6 }}</td>
+                  <td>{{ index $r 7 }}</td>
+                  <td>{{ index $r 8 }}</td>
+                  <td>{{ index $r 9 }}</td>
+                  
+                  <td>{{ index $r 11 }}</td>
+                  <td>{{ index $r 12 }}</td>
+                  <td style="text-align: right">{{ index $r 13 }}%</td>
+                </tr>
+            </tbody>
+        {{ end }}
+
+        {{ $i := $.Scratch.Get "i" }}
+        {{ $i := add $i 1}}
+        {{ $.Scratch.Set "i" $i}}
+    {{ end }}
+</table>
+
+<script type="text/javascript" src="{{.Site.BaseURL}}js/jquery.number.min.js"></script>
+<script type="text/javascript">
+  			$('.numbers').number(true,0)
+
+</script>
+</div>
