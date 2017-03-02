@@ -1,8 +1,9 @@
 title = "AVinCapital"
 languageCode = "en-us"
 baseUrl = "https://gswcapital.github.io/"
+#baseUrl = "http://localhost:1313/"
 theme = "casper"
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 
 # Define how many pages appear per site
@@ -44,10 +45,16 @@ paginatePath = "page"
   category = "categories"
 
 [[menu.main]]
-  name = "Home"
+  name = "Home \u2021"
   weight = -130
   identifier = "home"
   url = "/"
+
+[[menu.main]]
+  name = "AVIN \u2122"
+  weight = -120
+  identifier = "avin"
+  url = "/avin"
 
 [[menu.main]]
   name = "Investment"
