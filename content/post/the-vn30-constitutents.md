@@ -17,7 +17,6 @@ tags = [
 ]
 image = ""
 share = false
-layout = "vn30"
 
 +++
 
@@ -45,4 +44,4 @@ layout = "vn30"
 	+ The stocks 21th - 40th: The Top 30 are selected into the index universe with high prefer to the existing components.
 	+ The rest of 10 would be considered as the reserved stocks.
 
-For the details of the Index, please click [HERE](https://docs.google.com/spreadsheets/d/1Y2mZrlMjDGyIl79ybPVyza-U9h5RonlgTigoOE4eEM4/edit?usp=sharing). The exchange rate using is **1USD = 23,000VND**
+For the sample details of the Index, please click [HERE](https://docs.google.com/spreadsheets/d/1Y2mZrlMjDGyIl79ybPVyza-U9h5RonlgTigoOE4eEM4/edit?usp=sharing). The exchange rate using is **1USD = 23,000VND**
