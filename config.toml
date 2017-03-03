@@ -1,7 +1,8 @@
 title = "AVinCapital"
 languageCode = "en-us"
-baseUrl = "https://gswcapital.github.io/"
+#baseUrl = "https://gswcapital.github.io/"
 #baseUrl = "http://localhost:1313/"
+baseUrl = "http://www.avincapital.com/"
 theme = "casper"
 enableRobotsTXT = false
 
