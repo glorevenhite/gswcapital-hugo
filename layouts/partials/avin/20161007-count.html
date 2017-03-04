@@ -1,22 +1,23 @@
+{{ $url := delimit (slice .Site.BaseURL "csv/20161007-count.csv") ""}}
+{{ $strUrl := string $url }}    
+{{ $dataCSV := getCSV "," $strUrl }}
+
 <script type="text/javascript">
-    {{ $urlfull := delimit (slice .Site.BaseURL "csv/20161007-count.csv") ""}}
-    {{ $strUrl := string $urlfull }}
-   
     $(document).ready(function() {
-        {{ $url := delimit (slice "../../csv/20161007-count.csv") ""}}
         var options = {
             chart: { 
                 renderTo: 'avin-count',
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
                 plotShadow: false,
-                type: 'pie'
+                type: 'pie',
+                colorByPoint: true,
             },
             title: {
               text: 'AVIN\u2122 Universe Structure (Count)'
             },
             tooltip: {
-                    pointFormat:'{point.y:.0f}</b>'
+                    pointFormat:'<b>{point.y:.0f}</b> tickers'
             },
             plotOptions: {
                 pie: {
@@ -29,24 +30,24 @@
         };
 
         var s = { 
-              type : "pie",
-              colorByPoint: true,
-              data: []
+            data: []
         };
 
-        {{ $dataCSV := getCSV "," $strUrl }}
-        {{ $.Scratch.Add "i" 0 }}
+        // Set the counter
+        {{ $.Scratch.Set "lineNo" 0 }}
 
+        // Loop the data
         {{ range $r, $dataCSV }}
-            {{ if gt ($.Scratch.Get "i") 0 }}
+            {{ if gt ($.Scratch.Get "lineNo") 0 }}
                 var name = {{ index $r 0 }};
                 var y = parseFloat({{ index $r 1 }}); 
                 s.data.push({name, y});
             {{ end }}
-            // increase index
-            {{ $i := $.Scratch.Get "i" }}
+            
+            // increase the counter
+            {{ $i := $.Scratch.Get "lineNo" }}
             {{ $i := add $i 1}}
-            {{ $.Scratch.Set "i" $i}}
+            {{ $.Scratch.Set "lineNo" $i}}
         {{ end }}
 
         options.series.push(s);
