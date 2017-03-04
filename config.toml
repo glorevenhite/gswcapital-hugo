@@ -1,10 +1,10 @@
 title = "AVinCapital"
 languageCode = "en-us"
-#baseUrl = "https://gswcapital.github.io/"
 #baseUrl = "http://localhost:1313/"
 baseUrl = "http://www.avincapital.com/"
 theme = "casper"
 enableRobotsTXT = false
+relativeURLs = false
 
 
 # Define how many pages appear per site
@@ -30,6 +30,9 @@ paginatePath = "page"
 
     # Enable gogle analytics by entering your tracking code
     googleAnalyticsUserID = "UA-16013517-4"
+
+    base_git_url = "https://gswcapital.github.io/"
+
 
 [social]
     # Add your social network accounts to the profile section on the left

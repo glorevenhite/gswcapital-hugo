@@ -1,75 +1,57 @@
 <script type="text/javascript">
+    {{ $urlfull := delimit (slice .Site.BaseURL "csv/20161007-count.csv") ""}}
+    {{ $strUrl := string $urlfull }}
+   
+    $(document).ready(function() {
+        {{ $url := delimit (slice "../../csv/20161007-count.csv") ""}}
+        var options = {
+            chart: { 
+                renderTo: 'avin-count',
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+              text: 'AVIN\u2122 Universe Structure (Count)'
+            },
+            tooltip: {
+                    pointFormat:'{point.y:.0f}</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    showInLegend: true       
+                }
+            },
+            series: []
+        };
 
-      $(document).ready(function() {
-    
-      {{ $url := delimit (slice .Site.BaseURL "csv/20161007-count.csv") ""}}
-
-      var options = {
-        chart: {
-          
-          renderTo: 'avin-value',
-          plotBackgroundColor: null,
-          plotBorderWidth: null,
-          plotShadow: false,
-          type: 'pie'
-        },
-        title: {
-          text: 'AVIN\u2122 Universe Structure (Count)'
-        },
-
-        tooltip: {
-                pointFormat:'{point.y:.0f}</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                showInLegend: true       
-            }
-        },
-
-        series: []
-      };
-      
-  
-      $.get({{ $url }}, function(data) {
-        // Split the lines
-        var lines = data.split('\n');
         var s = { 
               type : "pie",
               colorByPoint: true,
               data: []
-            };
+        };
 
-        $.each(lines, function(lineNo, line) {
-          var items = line.split(',');
-          
-         
-      
-          // the rest of the lines contain data with their name in the first position
-          if (lineNo > 0) {
-            name = "";
-            y = 0;
-            
-            $.each(items, function(itemNo, item) { 
-              if (itemNo == 0) {
-                name = item;
-              } else {
-                y = parseFloat(item);
-              }
-            });
-            s.data.push({name, y}); 
-            
-          }
-        });
+        {{ $dataCSV := getCSV "," $strUrl }}
+        {{ $.Scratch.Add "i" 0 }}
+
+        {{ range $r, $dataCSV }}
+            {{ if gt ($.Scratch.Get "i") 0 }}
+                var name = {{ index $r 0 }};
+                var y = parseFloat({{ index $r 1 }}); 
+                s.data.push({name, y});
+            {{ end }}
+            // increase index
+            {{ $i := $.Scratch.Get "i" }}
+            {{ $i := add $i 1}}
+            {{ $.Scratch.Set "i" $i}}
+        {{ end }}
+
         options.series.push(s);
 
         var chart = new Highcharts.Chart(options);
-      });
-      
-      
     });
-    </script>
-
-
-      <div id="avin-size" style="float:left; min-width: 350px; max-width:50%; height: 400px; margin: auto 0 0 0"></div>
+</script>
+<div id="avin-count" style="float:left; min-width: 350px; max-width:50%; height: 400px; margin: auto 0"></div>
