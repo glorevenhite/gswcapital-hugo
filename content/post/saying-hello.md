@@ -15,7 +15,7 @@ share = false
 
 +++
 
-[Updated] Lại là một vòng loop mới [Updated]
+[Updated] 13/12/2018: Lại là một vòng loop mới [Updated]
 
 Đã khá lâu rồi không viết lách thứ gì nghiêm túc, chợt thấy cuộc sống cứ bừa bộn, cuống cuồng... Nhiều điều muốn làm, nhiều điều dang dở...
 
