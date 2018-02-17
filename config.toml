@@ -61,6 +61,12 @@ paginatePath = "page"
   url = "/avin"
 
 [[menu.main]]
+  name = "VN30"
+  weight = -115
+  identifier = "vn30"
+  url = "/vn30"
+
+[[menu.main]]
   name = "Investment"
   weight = -110
   identifier = "investment"

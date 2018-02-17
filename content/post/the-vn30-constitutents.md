@@ -8,6 +8,7 @@ comments = false
 slug = "the-vn30-index-constituents"
 categories = [
 	"indices",
+	"vn30",
 	"guidance"
 ]
 tags = [
