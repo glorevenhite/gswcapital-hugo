@@ -67,11 +67,11 @@
           {{ range $dataJ}}
           <tr>
             <td>{{ .val0 }}</td>
-            <td> <div class="tooltip">{{ .val1 }}<span class="tooltiptext">{{ .val2}}</span></div></td>
-            <td style="text-align:right" >{{ .val3 }}</td>
-            <td style="text-align:right">{{ .val6 }}</td>
-            <td style="text-align:right">{{ .val7 }}</td>
-            <td style="text-align:right">{{ .val8 }}</td>
+            <td> <div class="tooltip">{{ .Ticker }}<span class="tooltiptext">{{ .CompanyName}}</span></div></td>
+            <td style="text-align:right" >{{ .OutstandingShares }}</td>
+            <td style="text-align:right">{{ .Price }}</td>
+            <td style="text-align:right">{{ .MarketCapital }}</td>
+            <td style="text-align:right">{{ .MarketCapitalUSD }}</td>
           </tr>
           {{end}}
         </tbody>
