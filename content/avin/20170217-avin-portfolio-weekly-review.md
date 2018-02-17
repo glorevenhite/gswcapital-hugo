@@ -7,9 +7,7 @@ menu = ""
 comments = false
 slug = "20160710-vietnam-stock-market-weekly-forecast"
 categories = [
-	"forecast",
-	"commentary",
-	"portfolio"
+	"avin"
 ]
 tags = [
   "AVIN", "weekly"

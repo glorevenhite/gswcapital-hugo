@@ -6,11 +6,7 @@ draft = false
 menu = ""
 comments = false
 slug = "the-vn30-index-constituents"
-categories = [
-	"indices",
-	"vn30",
-	"guidance"
-]
+categories = ["vn30"]
 tags = [
   "vnindex",
   "indices",

@@ -1,0 +1,99 @@
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+
+{{if .Params.image}}
+  {{if or (eq (substr .Params.image 0 7) "http://") (eq (substr .Params.image 0 8) "https://")}}
+  <header class="main-header post-head" style="background-image: url({{.Params.image}})">
+  {{ else }}
+  <header class="main-header post-head" style="background-image: url({{ $baseurl }}{{.Params.image}})">
+  {{ end }}
+  <nav class="main-nav overlay clearfix">
+{{else}}
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+{{end}}
+
+  {{ if .Site.Params.logo }}
+      <a class="blog-logo" href="{{.Site.BaseURL}}"><img src="{{.Site.BaseURL}}{{ .Site.Params.logo }}" alt="Home" /></a>
+  {{end}}
+  {{ if .Site.Menus.main }}
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  {{else}}
+      <a class="menu-button icon-feed" href="{{ .Site.BaseURL }}index.xml">&nbsp;&nbsp;Subscribe</a>
+  {{end}}
+  </nav>
+</header>
+
+<main class="content" role="main">
+  <article class="post {{ .Section }}">
+
+    <header class="post-header">
+        <h1 class="post-title">{{.Title}}</h1>
+        <small>{{.Description}}</small>
+        
+        <section class="post-meta">
+        {{ $author := .Site.Params.author }}
+
+        {{if .Params.tags }} Tagged on
+            {{ range $index, $tag := .Params.tags }}
+                <a class="post-tag" href="{{$baseurl}}tags/{{ $tag | urlize }}/">{{ $tag }}</a>,
+            {{ end }}
+        {{end}}
+        <time class="post-date" datetime="{{ .Date.Format "02 Jan, 2017" | safeHTML }}">
+            {{ .Date.Format "02 Jan, 2006" }}
+        </time>
+        
+        </section>
+    </header>
+
+    <section class="post-content">
+      {{ .Content }}
+      
+      {{ $url := delimit (slice .Site.BaseURL "json/vn30/2017b.json") ""}}
+      {{ $strURL := string $url }}
+      {{ $dataJ := getJSON $strURL }} 
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th style="text-align:right">Ticker</th>
+            <th style="text-align:right">Shares</th>
+            <th style="text-align:right">Price '000</th>
+            <th style="text-align:right">MrkCap(VND)</th>
+            <th style="text-align:right">MrkCap(USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+          {{ range $dataJ}}
+          <tr>
+            <td>{{ .val0 }}</td>
+            <td> <div class="tooltip">{{ .val1 }}<span class="tooltiptext">{{ .val2}}</span></div></td>
+            <td style="text-align:right" >{{ .val3 }}</td>
+            <td style="text-align:right">{{ .val6 }}</td>
+            <td style="text-align:right">{{ .val7 }}</td>
+            <td style="text-align:right">{{ .val8 }}</td>
+          </tr>
+          {{end}}
+        </tbody>
+        </table>
+
+    </section>
+
+  <footer class="post-footer">
+    {{if .Site.Params.logo}}
+    <figure class="author-image">
+        <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{ $baseurl }}{{.Site.Params.logo}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>
+    </figure>
+    {{end}}
+
+    {{ partial "author.html" . }}
+
+    {{ partial "share.html" . }}
+
+    {{ partial "disqus.html" . }}
+    
+  </footer>
+</article>
+
+</main>
+{{ partial "footer.html" . }}

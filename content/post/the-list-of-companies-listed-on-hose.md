@@ -7,7 +7,6 @@ menu = ""
 comments = false
 slug = "the-list-of-companies-listed-on-hose"
 categories = [
-	"indices",
 	"guidance"
 ]
 tags = [
